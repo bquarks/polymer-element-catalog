@@ -1,10 +1,10 @@
-# Polymer Element Catalog
+# Bquarks Polymer Element Catalog
 
 [![Build Status](https://travis-ci.org/bquarks/polymer-element-catalog.svg?branch=master)](https://travis-ci.org/bquarks/polymer-element-catalog)
 
 ## Getting Started
 
-To work on the Polymer Elements Catalog, clone the repository.
+To work on the Bquarks Polymer Elements Catalog, clone the repository.
 
 To install dependencies:
 
