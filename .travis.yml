@@ -4,11 +4,14 @@ node_js:
 - 0.12
 install:
 - npm install
-- "./node_modules/.bin/bower update"
+- ./node_modules/.bin/bower update
 script: npm run build
 cache:
   directories:
   - node_modules
   - bower_components
 after_success:
-- "./scripts/travis_deploy"
+- ./scripts/travis_deploy
+env:
+  global:
+    secure: hKBA3ONtaCpxCdmW+tPthwiKVdkTyRPAO3AxOFm+2AB3rICwlc2yQuSZJ3vm5Fw1MO1syg7hM4Pt59puau8x49LsroKr6pQwNpQpetKLFMyUidZoWq75oC+gw1rjpavUq3GedN5N1GcicqA+UEkDOHU6MRVBo9u9qjmz0B/3oQDBpyNFaZTVk1kg0mHm3cvPzxEJL39+iA5tH0LaPOT+rZ5iMbbc0ICz7hnW0EeKPVmm3AkPrZEI3jl+yzO1XV0Hx/e6QDxVg3nVnheEKUMTE9blo59nwyhsMk+5xV8It0iptqOTrrKuaoeRlzs0BCZz8ICzcvsoFegCSB9V/uLrJMl5Un92dtf+ztatLJuRYUJjC9hVaprhdd6s42lex4mlJ2OmMGrDSzkbD+5zVsuocclkcHEBuktTx/mxFCtZ/WFPOh68Q9A7nqmSAMegAtVjo8pLCpxphVIGqrz6FQxdBiTkU9uUDTYi+YGp/QGtkvvtHTaN7pQfX9hp5HDKYd9NhqrmsaeswY8wsVf640F0PPqHZPXGAsaBTOv8nSkOzajhVUlOlAKto9ORzS6qwSyrhgOWM9P9KNbLZtcYqGvEGvaOsrS7SZ9KsWcM1bTRN63tCD6iMLXDguAKvhtb+GjghQVZ6NSpkdjMAg5gZ5437EXQW4GWKYeBzlllAFV0NAQ=
