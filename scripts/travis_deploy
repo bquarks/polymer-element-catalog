@@ -1,13 +1,17 @@
-#!/usr/bin/env bash
+#!/bin/bash
+set -o pipefail
 
-if [[ "${TRAVIS_PULL_REQUEST}" == "false" ]] && [[ "${TRAVIS_TAG}" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-  echo "Deploying release $TRAVIS_TAG to production Firebase..."
-  ./node_modules/.bin/firebase deploy
-  exit
-fi
+echo "$TRAVIS_BRANCH"
 
-if [[ "${TRAVIS_PULL_REQUEST}" == "false" ]] && [[ "${TRAVIS_BRANCH}" == "master" ]]; then
-  echo "Deploying to staging Firebase..."
-  ./node_modules/.bin/firebase deploy -f p-catalog-staging
-  exit
-fi
+#if [ "$TRAVIS_BRANCH" = "master" ] && [ "$TRAVIS_PULL_REQUEST" != "true" ]
+#then
+#  echo "Deploying!" && \
+#  cp CNAME dist
+#  cd _site && \
+#  git config --global user.email "travis@bq.com"
+#  git config --global user.name "TRAVIS-CI"
+#  git init && \
+#  git add . && \
+#  git commit -m "deploy" && \
+#  git push --force --quiet "https://${GH_OAUTH_TOKEN}@github.com/bq/penguin-doc" master:gh-pages > /dev/null 2>&1
+#fi
