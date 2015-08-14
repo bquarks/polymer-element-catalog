@@ -2,9 +2,9 @@
   "name": "polymer-element-catalog",
   "version": "0.2.1",
   "authors": [
-    "Google"
+    "BQ"
   ],
-  "description": "A catalog showcasing Google's Web Components",
+  "description": "A catalog showcasing BQ Web Components",
   "main": "dist/index.html",
   "license": "http://polymer.github.io/LICENSE.txt",
   "ignore": [
@@ -24,6 +24,7 @@
     "google-web-components": "GoogleWebComponents/google-web-components#^1.0.0",
     "molecules": "PolymerElements/molecules#^1.0.0",
     "steroid-elements": "bquarks/steroid-elements#^1.0.0",
+    "mercury-elements": "bquarks/mercury-elements#^1.0.0",
     "polymer": "Polymer/polymer#^1.0.0",
     "app-router": "~2.6.0",
     "pushstate-anchor": "~0.3.0",

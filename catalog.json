@@ -6,6 +6,13 @@
       "symbol":"Sr",
       "color":"#ffeb3b",
       "tagline":"Polymer with steroids",
+    },
+    {
+      "name":"mercury-elements",
+      "title":"Mercury Elements",
+      "symbol":"Hg",
+      "color":"#6F8FB8",
+      "tagline":"UI fluid and amazing"
     }
   ]
 }
