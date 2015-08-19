@@ -15,6 +15,9 @@
         "tests"
     ],
     "private": true,
+    "resolutions": {
+        "polymer": "Polymer/polymer#1.1.0"
+    },
     "dependencies": {
         "iron-elements": "PolymerElements/iron-elements#^1.0.0",
         "paper-elements": "PolymerElements/paper-elements#^1.0.0",
@@ -24,8 +27,8 @@
         "google-web-components": "GoogleWebComponents/google-web-components#^1.0.0",
         "molecules": "PolymerElements/molecules#^1.0.0",
         "steroid-elements": "bquarks/steroid-elements#^1.0.2",
-        "mercury-elements": "bquarks/mercury-elements#^1.0.1",
-        "polymer": "Polymer/polymer#^1.0.6",
+        "mercury-elements": "bquarks/mercury-elements#^1.0.2",
+        "polymer": "Polymer/polymer#^1.0.0",
         "app-router": "~2.6.0",
         "pushstate-anchor": "~0.3.0",
         "color": "~2.5.0",
